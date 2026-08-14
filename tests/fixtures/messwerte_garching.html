@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Messdaten Garching</title>
+<style>
+.messwerte-container {
+  font-family: Arial, sans-serif !important;
+  color: #000 !important;
+  background: #fff !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  width: fit-content !important;
+  font-size: 14px !important;
+}
+
+.messwerte-tabelle {
+  border-collapse: collapse !important;
+  margin: 8px auto !important;
+  border: 1px solid #444 !important;
+  font-size: 14px !important;
+}
+
+.messwerte-tabelle td,
+.messwerte-tabelle th {
+  border: 1px solid #444 !important;
+  padding: 4px 6px !important;
+  text-align: center !important;
+  color: #000 !important;
+  font-size: 14px !important;
+  white-space: nowrap !important; /* <<< verhindert Zeilenumbruch */
+}
+
+.messwerte-tabelle .rfett {
+  font-weight: bold !important;
+  font-size: 14px !important;
+  /* background-color: #f3f3f3 !important; */
+}
+
+.messwerte-titel {
+  font-size: 1.1em !important;
+  font-weight: bold !important;
+  color: #000 !important;
+  margin-bottom: 0 !important;
+  border: none !important;         /* verhindert Unterstreichung oder Linie */
+  text-decoration: none !important; /* entfernt eventuelle Textlinie */
+}
+
+.messwerte-untertitel {
+  font-size: 0.95em !important;
+  color: #333 !important;
+  margin-top: 4px !important;
+  margin-bottom: 6px !important;
+}
+
+.messwerte-tabelle sup {
+  font-size: 0.7em !important;    /* kleiner */
+  vertical-align: top !important; /* leicht nach oben, aber nicht zu stark */
+}
+
+</style>
+</head>
+<body>
+<div class="messwerte-container">
+
+<h3 class="messwerte-titel">Messwerte aus Garching, Oskar von Miller Turm</h3>
+<h4 class="messwerte-untertitel">Stand: 14.08.2026 13:08 Uhr</h4>
+
+<!-- PROFILWERTE -->
+<table class="messwerte-tabelle" id="messwerte-profilwerte">
+<tr><td colspan="10" class="rfett">Profilwerte</td></tr> 
+
+<tr><td class="rfett">Höhe</td><td>0.2 m</td><td>0.5 m</td><td>1.0 m</td><td>2.0 m</td><td>5.0 m</td><td>10.0 m</td><td>20.0 m</td><td>35.0 m</td><td>50.0 m</td></tr>
+<tr><td class="rfett">Lufttemperatur</td><td>31.2 &deg;C</td><td>30.0 &deg;C</td><td>--- &deg;C</td><td>28.8 &deg;C</td><td>28.5 &deg;C</td><td>28.0 &deg;C</td><td>27.7 &deg;C</td><td>27.9 &deg;C</td><td>28.4 &deg;C</td></tr>
+<tr><td class="rfett">Feuchttemperatur</td><td>16.9 &deg;C</td><td>16.0 &deg;C</td><td>--- &deg;C</td><td>15.1 &deg;C</td><td>--- &deg;C</td><td>15.4 &deg;C</td><td>15.1 &deg;C</td><td>14.9 &deg;C</td><td>15.0 &deg;C</td></tr>
+<tr><td class="rfett">Relative Feuchte</td><td>23 %</td><td>22 %</td><td>--- %</td><td>21 %</td><td>--- %</td><td>25 %</td><td>25 %</td><td>23 %</td><td>22 %</td></tr>
+<tr><td class="rfett">Taupunkt</td><td>7.3 &deg;C</td><td>5.9 &deg;C</td><td>--- &deg;C</td><td>4.4 &deg;C</td><td>--- &deg;C</td><td>6.1 &deg;C</td><td>5.6 &deg;C</td><td>5.0 &deg;C</td><td>4.9 &deg;C</td></tr>
+<tr><td class="rfett">Windgeschwindigkeit</td><td>1.1 m/s</td><td>0.9 m/s</td><td>2.0 m/s</td><td>1.9 m/s</td><td>2.1 m/s</td><td>3.2 m/s</td><td>1.9 m/s</td><td>2.9 m/s</td><td>3.1 m/s</td></tr>
+</table>
+
+
+<!-- BODENWERTE -->
+<table class="messwerte-tabelle" id="messwerte-boden">
+<tr><td colspan="6" class="rfett">Bodenwerte</td></tr>
+<tr><td class="rfett">Tiefe</td><td>50 cm</td><td>20 cm</td><td>10 cm</td><td>5 cm</td><td>2 cm</td></tr>
+<tr><td class="rfett">Temperatur</td>
+<td>22.3 &deg;C</td>
+<td>22.9 &deg;C</td>
+<td>22.8 &deg;C</td>
+<td>24.9 &deg;C</td>
+<td>26.9 &deg;C</td></tr>
+</table>
+
+<!-- STRAHLUNG -->
+<table class="messwerte-tabelle" id="messwerte-strahlung">
+<tr><td colspan="6" class="rfett">Strahlungswerte</td></tr>
+<tr>
+<td class="rfett">Globalstr.</td>
+<td class="rfett">Reflexstr.</td>
+<td class="rfett">Atm. Gegenstr.</td>
+<td class="rfett">Langw.Ausstr..</td>
+<td class="rfett">Sonnenscheindauer</td>
+<td class="rfett">Albedo</td>
+</tr>
+<tr>
+<td>863.7 W/m<sup>2</sup></td>
+<td>144.7 W/m<sup>2</sup></td>
+<td>367.2 W/m<sup>2</sup></td>
+<td>595.4 W/m<sup>2</sup></td>
+<td>0 Min.</td>
+<td>16.8 %</td>
+</tr>
+</table>
+
+<!-- Sonstige Messwerte -->
+<table class="messwerte-tabelle" id="messwerte-sonstige">
+<tr><td colspan="6" class="rfett">Sonstige Messwerte</td></tr>
+<tr>
+<td class="rfett">Luftdruck 478 m</td>
+<td class="rfett">Luftdruck NN</td>
+<td class="rfett">Windrichtung<br>10 m</td>
+<td class="rfett">Windrichtung<br>62 m</td>
+<td class="rfett">Niederschlag<br>Aktuell</td>
+<td class="rfett">Niederschlagsumme<br>seit 0 Uhr UTC</td>
+</tr>
+<tr>
+<td>965.4 hPa</td>
+<td>1018.8 hPa</td>
+<td>109 &deg;</td>
+<td>108 &deg;</td>
+<td>0.000 mm/h</td>
+<td>0.075 mm</td>
+</tr>
+</table>
+
+</div>
+</body>
+</html>

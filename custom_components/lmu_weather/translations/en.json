@@ -1,0 +1,16 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "LMU Weather Station",
+        "description": "Select the LMU Weather Station you want to add.",
+        "data": {
+          "station": "Weather Station"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This station is already configured."
+    }
+  }
+}

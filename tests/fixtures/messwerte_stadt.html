@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Messdaten Stadtstation</title>
+<style>
+.messwerte-container {
+  font-family: Arial, sans-serif !important;
+  color: #000 !important;
+  background: #fff !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  width: fit-content !important;
+  font-size: 13px !important;
+}
+
+.messwerte-tabelle {
+  border-collapse: collapse !important;
+  margin: 8px auto !important;
+  border: 1px solid #444 !important;
+  font-size: 13px !important;
+}
+
+.messwerte-tabelle td,
+.messwerte-tabelle th {
+  border: 1px solid #444 !important;
+  padding: 4px 6px !important;
+  text-align: center !important;
+  color: #000 !important;
+  font-size: 13px !important;
+  white-space: nowrap !important; /* <<< verhindert Zeilenumbruch */
+}
+
+.messwerte-tabelle .rfett {
+  font-weight: bold !important;
+  font-size: 13px !important;
+  /* background-color: #f3f3f3 !important; */
+}
+
+.messwerte-titel {
+  font-size: 1.1em !important;
+  font-weight: bold !important;
+  color: #000 !important;
+  margin-bottom: 0 !important;
+  border: none !important;         /* verhindert Unterstreichung oder Linie */
+  text-decoration: none !important; /* entfernt eventuelle Textlinie */
+}
+
+.messwerte-untertitel {
+  font-size: 0.95em !important;
+  color: #333 !important;
+  margin-top: 4px !important;
+  margin-bottom: 6px !important;
+}
+
+.messwerte-tabelle sup {
+  font-size: 0.7em !important;    /* kleiner */
+  vertical-align: top !important; /* leicht nach oben, aber nicht zu stark */
+}
+
+</style>
+</head>
+<body>
+<div class="messwerte-container">
+
+<h3 class="messwerte-titel">Messwerte aus München,<br>Theresienstr. 37</h3>
+<h4 class="messwerte-untertitel">Stand: 14.08.2026 13:08 Uhr</h4>
+
+<!-- PROFILWERTE -->
+<table class="messwerte-tabelle" id="messwerte-profilwerte">
+<tr><td colspan="3" class="rfett">Profilwerte</td></tr>
+<tr><td class="rfett">Höhe</td><td>2.0 m</td><td>30.0 m</td></tr>
+<tr><td class="rfett">Lufttemperatur</td><td>30.0 &deg;C</td><td>28.2 &deg;C</td></tr>
+<tr><td class="rfett">Relative Feuchte</td><td>24.0 %</td><td>23.9 %</td></tr>
+<tr><td class="rfett">Feuchttemperatur</td><td>16.5 &deg;C</td><td>15.2 &deg;C</td></tr>
+<tr><td class="rfett">Taupunkt</td><td>7.2 &deg;C</td><td>5.6 &deg;C</td></tr>
+</table>
+
+<!-- WIND & DRUCK -->
+<table class="messwerte-tabelle" id="messwerte-winddruck">
+<tr><td colspan="3" class="rfett">Wind und Luftdruck</td></tr>
+<tr><td class="rfett">Windgeschwindigkeit 30 m</td><td>2.1 m/s</td></tr>
+<tr><td class="rfett">Windrichtung 30 m</td><td>24 &deg;</td></tr>
+<tr><td class="rfett">Luftdruck 517 m</td><td>959.9 hPa</td></tr>
+<tr><td class="rfett">Luftdruck NN</td><td>1017.2 hPa</td></tr>
+</table>
+
+<!-- NIEDERSCHLAG -->
+<table class="messwerte-tabelle" id="messwerte-niederschlag">
+<tr><td colspan="3" class="rfett">Niederschlag</td></tr>
+<tr><td class="rfett">Aktuell</td><td class="rfett">Summe seit 0 Uhr UTC</td><td class="rfett">Art</td></tr>
+<tr>
+<td>0.000 mm/h</td>
+<td>0.005 mm</td>
+<td>-</td>
+</tr>
+</table>
+
+<!-- STRAHLUNG -->
+<table class="messwerte-tabelle" id="messwerte-strahlung">
+<tr><td colspan="5" class="rfett">Strahlungswerte</td></tr>
+<tr>
+<td class="rfett">Globalstr.</td>
+<td class="rfett">Diffusstr.</td>
+<td class="rfett">Atm. Gegenstr.</td>
+</tr>
+<tr>
+<td>859.0 W/m<sup>2</sup></td>
+<td>73.9 W/m<sup>2</sup></td>
+<td>1158.6 W/m<sup>2</sup></td>
+</tr>
+<tr>
+<td colspan="2" class="rfett">Sonnenscheindauer</td>
+<td class="rfett">UV-Index</td>
+</tr>
+<tr>
+<td colspan="2">6 Std. 38 Min.</td>
+<td>6.5</td>
+</tr>
+</table>
+
+<!-- BODENWERTE -->
+<table class="messwerte-tabelle" id="messwerte-boden">
+<tr><td colspan="6" class="rfett">Bodenwerte</td></tr>
+<tr><td class="rfett">Tiefe</td><td>50 cm</td><td>20 cm</td><td>10 cm</td><td>5 cm</td><td>2 cm</td></tr>
+<tr><td class="rfett">Temperatur</td>
+<td>23.5 &deg;C</td>
+<td>22.5 &deg;C</td>
+<td>22.4 &deg;C</td>
+<td>22.3 &deg;C</td>
+<td>22.3 &deg;C</td></tr>
+</table>
+
+</div>
+</body>
+</html>

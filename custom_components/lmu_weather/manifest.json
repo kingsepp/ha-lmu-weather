@@ -1,0 +1,17 @@
+{
+  "domain": "lmu_weather",
+  "name": "LMU Weather Station",
+  "codeowners": [
+    "@kingsepp"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/kingsepp/ha-lmu-weather",
+  "issue_tracker": "https://github.com/kingsepp/ha-lmu-weather/issues",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [
+    "beautifulsoup4"
+  ],
+  "version": "1.0.0"
+}
