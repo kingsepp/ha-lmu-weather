@@ -14,10 +14,9 @@
 
 # Quick installation
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?repository=ha-lmu-weather&owner=kingsepp)
-[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=lmu_weather)
+* Add `https://github.com/kingsepp/ha-lmu-weather` as a HACS custom repository (category `Integration`), install it, then go to `Settings` --> `Devices and services` --> add integration `LMU Weather Station`, pick a station, done. No credentials, no YAML.
 
-* go to `Settings` --> `Devices and services` --> add integration `LMU Weather Station`, pick a station, done. No credentials, no YAML.
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=lmu_weather)
 
 # 1. Why this integration?
 
@@ -51,9 +50,6 @@ Data source — the two published pages this integration polls every 2 minutes:
 
 ## Option 1: HACS installation (recommended)
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?repository=ha-lmu-weather&owner=kingsepp)
-
-Or use these steps:
 * In Home Assistant go to the HACS integration (left admin menu)
 * top right, click the 3 dots
 * click "Custom Repositories"
